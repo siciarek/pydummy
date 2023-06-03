@@ -1,9 +1,9 @@
 from setuptools import setup
 
-from pydummy import __version__
+from tm_utils import __version__
 
 setup(
-    name="pydummy",
+    name="tm-utils",
     version=__version__,
 
     url="https://github.com/siciarek/pydummy.git",
@@ -14,6 +14,6 @@ setup(
         "python-docx",
     ],
     py_modules=[
-        "pydummy"
+        "tm-utils"
     ],
 )
