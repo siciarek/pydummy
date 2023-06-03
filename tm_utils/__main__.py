@@ -1,5 +1,5 @@
 import argparse
-from pydummy.utils import random_month
+from tm_utils.utils import random_month
 
 arg_parser = argparse.ArgumentParser(
     description="Generate sample case reports, for report templates development purpose.",
