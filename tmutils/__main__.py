@@ -1,5 +1,6 @@
 import argparse
 from tmutils.utils import random_month
+from tmutils import __version__
 
 arg_parser = argparse.ArgumentParser(
     description="Generate sample case reports, for report templates development purpose.",
@@ -13,6 +14,15 @@ arg_parser.add_argument(
     "-i",
     "--init",
     help="initialize templates sandbox",
+    action="store_true",
+    default=False,
+    required=False,
+)
+
+arg_parser.add_argument(
+    "-v",
+    "--version",
+    help="display module version",
     action="store_true",
     default=False,
     required=False,
@@ -48,13 +58,15 @@ arg_parser.add_argument(
 
 args = arg_parser.parse_args()
 
-if args.reset:
+if args.version:
+    print(__version__)
+elif args.reset:
     print("RESET TEMPLATES SANDBOX FFFF")
 elif args.init:
     print("INITIALIZE TEMPLATES SANDBOX FFFF")
 elif args.generate:
     if args.generate == "0":
-        print("GENEARATE ALL THE REPORTS.")
+        print("GENEARATE ALL THEs REPORTS.")
     else:
         print(f"GENERATE {args.generate} REPORTS.")
 else:
