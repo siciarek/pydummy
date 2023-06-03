@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pydummy.egg-info/PKG-INFO
+pydummy.egg-info/SOURCES.txt
+pydummy.egg-info/dependency_links.txt
+pydummy.egg-info/requires.txt
+pydummy.egg-info/top_level.txt
