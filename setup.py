@@ -14,6 +14,6 @@ setup(
         "python-docx",
     ],
     py_modules=[
-        "tm-utils"
+        "tm_utils"
     ],
 )
