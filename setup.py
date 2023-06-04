@@ -19,8 +19,8 @@ setup(
     ],
     packages=find_packages(
         include=[
-            'tmutils',
-            'tmutils.*'
+            'tm_toolkit',
+            'tm_toolkit.*'
         ]
     ),
     install_requires=[
@@ -30,7 +30,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'generate-reports=tm_toolkit.scripts:generate_reports'
+            'generate-reports=tm_toolkit.entrypoints:generate_reports'
         ]
     }
 )
