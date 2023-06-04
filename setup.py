@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from tmutils import __version__
 
@@ -15,7 +15,13 @@ setup(
         "dependency-injector~=4.41.0",
         "Jinja2~=3.1.2",
     ],
-    py_modules=[
-        "tmutils"
+    license="MIT",
+    packages=find_packages(include=['tmutils', 'tmutils.*']),
+    keywords="utils",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Silent Eight Transaction Management Team",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
     ],
 )
