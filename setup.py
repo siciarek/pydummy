@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-from tmutils import __version__
+from tm_toolkit import __version__
 
 setup(
     name="tm-toolkit",
