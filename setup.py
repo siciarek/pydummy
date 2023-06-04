@@ -17,17 +17,19 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
     ],
-    packages=find_packages(
-        include=[
-            'tm_toolkit',
-            'tm_toolkit.*'
-        ]
-    ),
     install_requires=[
         "beautifulsoup4~=4.12.2",
         "Jinja2~=3.1.2",
         "python-docx~=0.8.11",
     ],
+    packages=find_packages(
+        include=[
+            'tm_toolkit',
+            'tm_toolkit.*',
+            'tm_toolkit.entrypoints',
+            'tm_toolkit.entrypoints.*',
+        ]
+    ),
     entry_points={
         'console_scripts': [
             'generate-reports=tm_toolkit.entrypoints:generate_reports'
